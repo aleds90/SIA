@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrazione"
+            android:textColor="@color/background2"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_below="@id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background2"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/dialog_title_layout"
+        android:id="@+id/dialog_layout"
+        android:padding="25dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/background2"/>
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="La tua email"
+                    android:textColorHint="@color/background2"
+                    android:textColor="@color/background2"
+                    android:ems="20"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+
+                    android:text="Password"/>
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/background2"
+                    android:textColor="@color/background2"
+                    android:hint="Scegli una password"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:text="Nome" />
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:textColorHint="@color/background2"
+                    android:inputType="textPersonName"
+                    android:hint="Il tuo nome" />
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:text="Cognome" />
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/background2"
+                    android:textColorHint="@color/background2"
+                    android:hint="Il tuo cognome"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:text="Competenza" />
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_competence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/background2"
+                    android:textColorHint="@color/background2"
+                    android:hint="(Solo se insegnante)"/>
+
+            </TableRow>
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+
+                    android:text="Citta'" />
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/background2"
+                    android:textColorHint="@color/background2"
+                    android:hint="(Solo se insegnante)"/>
+
+            </TableRow>
+
+
+            <TableRow
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+
+                    android:text="Indirizzo" />
+
+                <EditText
+                    android:id="@+id/et_registration_visitor_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/background2"
+                    android:textColorHint="@color/background2"
+                    android:hint="(Solo se insegnante)"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:buttonTint="@color/background2"
+                    android:id="@+id/cb_registration_visitor_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:text="Accetta Termini e Condizioni"
+                    android:layout_span="2"
+                    android:checked="false" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

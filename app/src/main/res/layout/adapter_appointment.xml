@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="100dp"
+    android:background="@drawable/circle_shape">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/data"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:background="@drawable/circle_shape"/>
+    <TextView
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_lezioni"
+        android:layout_alignTop="@id/data"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lezioni di:"/>
+    <TextView
+        android:id="@+id/adapter_appointment_competence"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tv_lezioni"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Tennis"/>
+    <TextView
+        android:id="@+id/tv_aperto"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Aperto a:"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/data"/>
+
+    <TextView
+        android:layout_below="@id/tv_aperto"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Tutti"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:background="@color/background2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adp_resSlot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="2016/09/09"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_toRightOf="@id/adp_resSlot_name"
+            android:id="@+id/adp_resSlot_hourStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="14:00"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_toRightOf="@id/adp_resSlot_hourStart"
+            android:id="@+id/adp_appointment_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text=" - "
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/adp_resSlot_hourEnd"
+            android:layout_toRightOf="@id/adp_appointment_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="17:00"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adp_resSlot_name"
+            android:layout_alignStart="@id/adp_resSlot_hourStart"
+            android:text="Inizio"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/adp_res_slot_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adp_resSlot_hourEnd"
+            android:layout_alignStart="@id/adp_resSlot_hourEnd"
+            android:text="Fine"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/adp_res_slot_data"
+            android:background="@drawable/detail_appointment"
+            android:textColor="@android:color/white"
+            android:text="dettaglio appuntamento"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/adp_slot_bottomlayout"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/adp_resSlot_tv_status"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="CONFERMATO"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

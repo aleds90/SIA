@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alessandro.sia.activity.MyReservationSlotActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background2">
+
+            <ImageView
+                android:id="@+id/tb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Le mie prenotazioni"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@color/background2"
+                android:textColor="@android:color/white" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.alessandro.sia.util.NestedListView
+            android:id="@+id/reservationSlot_lv_slots"
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.alessandro.sia.util.NestedListView>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alessandro.sia.activity.AppointmentDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/tb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dettagli appuntamento"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@color/background"
+                android:textColor="@android:color/white" />
+        </android.support.v7.widget.Toolbar>
+
+        <com.alessandro.sia.util.NestedListView
+            android:layout_below="@id/toolbar"
+            android:id="@+id/appointmentdeatil_lv_slots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.alessandro.sia.util.NestedListView>
+
+        <RelativeLayout
+            android:layout_below="@id/appointmentdeatil_lv_slots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/detailAppointment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:id="@+id/detailAppointment_tv_competence"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/detailAppointment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+            <TextView
+                android:id="@+id/detailAppointment_tv_description"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/detailAppointment_tv_competence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

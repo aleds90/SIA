@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/photo"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_centerHorizontal="true"
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_insert_photo_white_24dp"
+                app:backgroundTint="@color/background2"
+                style="@style/FloatingActionButton"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/photo"
+                android:id="@+id/fab_user_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chat_white_24dp"
+                app:backgroundTint="@color/background2"
+                style="@style/FloatingActionButton"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/photo"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_border_color_white_24dp"
+                app:backgroundTint="@color/background2"
+                style="@style/FloatingActionButton"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/main_screen_side_padding"
+            android:paddingRight="@dimen/main_screen_side_padding">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/background2"
+                    android:textSize="@dimen/title_text_size"
+                    android:text="Informazioni Generali"
+                    android:layout_marginBottom="@dimen/main_screen_side_padding" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/viewpager3_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background2"
+                android:text="Alessandro Di Stefano"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/viewpager3_competence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background2"
+                android:text="Maestro di Tennis"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/viewpager3_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background2"
+                android:text="Residente in Via Toscana 16, Roma"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/background2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp"
+            android:paddingLeft="@dimen/main_screen_side_padding"
+            android:paddingRight="@dimen/main_screen_side_padding"
+            android:paddingTop="@dimen/text_top_padding">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/title_text_size"
+                android:text="La mia Descrizione"
+                android:layout_marginBottom="@dimen/main_screen_side_padding" />
+
+            <TextView
+                android:id="@+id/viewpager3_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/main_screen_side_padding"
+            android:paddingRight="@dimen/main_screen_side_padding"
+            android:paddingTop="@dimen/text_top_padding"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background2"
+                android:textSize="@dimen/title_text_size"
+                android:text="Il Tuo Rating"
+                android:layout_marginBottom="@dimen/main_screen_side_padding" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewpager_ratingBar"
+                android:isIndicator="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/viewpager_ratingNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/background2"
+
+                android:text="Votato da 109 persone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

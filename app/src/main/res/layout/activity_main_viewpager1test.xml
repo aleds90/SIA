@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/main_layout_createReservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="Button" >
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp_test"
+                android:tint="@color/background2"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/one"
+                android:text="Ricerca"
+                android:textSize="20dp"
+                android:textColor="@color/background2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/background2"/>
+
+        <RelativeLayout
+
+            android:orientation="vertical"
+            android:id="@+id/main_layout_createAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="Button" >
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_create_black_24dp_test"
+                android:tint="@color/background2"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/two"
+                android:text="Crea"
+                android:textSize="20dp"
+                android:textColor="@color/background2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/main_layout_myReservation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="Button" >
+
+            <ImageView
+                android:id="@+id/three"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_insert_invitation_black_24dp_test"
+                android:tint="@color/background2"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/three"
+                android:text="Riepilogo"
+                android:textSize="20dp"
+                android:textColor="@color/background2"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/background2"/>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/main_layout_myAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:text="Button" >
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assignment_black_24dp_test"
+                android:tint="@color/background2"/>
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/four"
+                android:text="Gestione"
+                android:textSize="20dp"
+                android:textColor="@color/background2"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.63"
+        android:orientation="horizontal" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background2"
+         >
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </LinearLayout>
+</LinearLayout>

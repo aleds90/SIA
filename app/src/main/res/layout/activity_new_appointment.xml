@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NewAppointmentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_creappuntamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+
+        <ImageView
+            android:id="@+id/tb_back_creaappuntamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:tint="@android:color/white"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea Appuntamento"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/background2"
+            android:textColor="@android:color/white"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/layout_giornoappuntamento"
+        android:layout_below="@id/toolbar_creappuntamento"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/background2"
+        >
+
+        <ImageView
+            android:id="@+id/imageView_creaappuntamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_date_range_black_24dp"
+            android:tint="@android:color/white"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/newAppointment_data"
+            android:textColor="@android:color/white"
+            android:paddingTop="25dp"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:layout_toRightOf="@id/imageView_creaappuntamento"/>
+
+        <TextView
+            android:id="@+id/newAppointment_tv_data"
+            android:layout_below="@id/newAppointment_data"
+            android:textColor="@android:color/white"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appointment2"
+        android:layout_below="@id/layout_giornoappuntamento"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/background2">
+
+        <TextView
+            android:id="@+id/textView_inizio"
+            android:paddingTop="30dp"
+            android:paddingLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inizio"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/newAppointment_tv_hourStart"
+            android:paddingTop="5dp"
+            android:paddingLeft="40dp"
+            android:layout_below="@id/textView_inizio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:paddingTop="3dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:tint="@android:color/white"
+            android:layout_alignTop="@id/newAppointment_tv_hourStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/newAppointment_tv_hourStart"
+            android:id="@+id/newappointment_img_scroll_startAt" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView_fine"
+            android:paddingTop="30dp"
+            android:paddingLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fine"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+
+            android:layout_centerHorizontal="true"
+            android:id="@+id/newAppointment_tv_hourEnd"
+            android:paddingTop="5dp"
+            android:paddingLeft="55dp"
+            android:layout_below="@id/textView_fine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:paddingTop="3dp"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:tint="@android:color/white"
+            android:layout_alignTop="@id/newAppointment_tv_hourStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/newAppointment_tv_hourEnd"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/layout_appointment3"
+        android:layout_below="@id/layout_appointment2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ripeti"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:id="@+id/ic_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:layout_alignParentRight="true"/>
+
+
+        <TextView
+            android:layout_toLeftOf="@id/ic_arrow"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Una sola volta"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/layout_appointment4"
+        android:layout_below="@id/layout_appointment3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+
+        <TextView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durata lezioni"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 ora"
+            android:textColor="@color/white"/>
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newAppointment_btn_create"
+        android:background="@color/background2"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@color/background2"
+            android:textColor="@android:color/white"
+            />
+
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

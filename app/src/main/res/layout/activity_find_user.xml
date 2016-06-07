@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alessandro.sia.activity.FindUserActivity"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/find_reservation_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/findUser_tb_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="@android:color/white"
+                />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleziona Utente"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="@color/background2"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_white_24dp"/>
+            <TextView
+                android:id="@+id/tv_status_star"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="1"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_below="@id/find_reservation_toolbar"
+        android:id="@+id/findUser_tb_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/findUser_et_search"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search_black_24dp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_below="@id/findUser_tb_search"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background2"/>
+
+    <ListView
+        android:paddingTop="1dp"
+        android:id="@+id/findUser_lv_users"
+        android:layout_below="@id/findUser_tb_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+</RelativeLayout>
